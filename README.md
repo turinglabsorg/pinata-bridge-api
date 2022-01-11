@@ -1,12 +1,12 @@
 # Pinata Express.js API
 
-This is a simple endpoint API that works with (Pinata)[https://pinata.cloud] and IPFS.
+This is a simple bridge API that works with [Pinata](https://pinata.cloud) and [IPFS](https://ipfs.io).
 
 You can use it to easily upload files and NFT metadata to Pinata or maybe to serve the metadata instead of using IPFS directly.
 
-With one simple call you can upload image or file on Pinata, create the metadata file and upload it as well on Pinata.
+With one simple request you can upload image (or video, etc) on Pinata, create the metadata JSON and upload it as well on Pinata.
 
-## How to use it
+## Prepare the environment
 
 You will need NodeJS and YARN. After you've installed all dependencies simply run:
 
@@ -26,7 +26,7 @@ Or, if you want to run it for production:
 yarn start
 ```
 
-## Upload files
+## Use the bridge
 
 Once the application is running you can use the endpoints:
 
@@ -39,7 +39,7 @@ You must create a POST request inserting following fields as form-data:
 - *external_url*: This field will contain the external url
 - *attributes*: This field can contain an array of attributes
 
-To see metadata specification please refer to https://docs.opensea.io/docs/metadata-standards#metadata-structure
+To see metadata specification please refer to https://docs.opensea.io/docs/metadata-standards#metadata-structure.
 
 An example of request, made with cURL is:
 
